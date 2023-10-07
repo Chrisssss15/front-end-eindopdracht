@@ -1,0 +1,995 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Montserrat:wght@300&family=Mooli&family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    /* display: flex;
+    justify-content: center; */
+
+}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    margin: auto;
+    background-color:#C9D2E0;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+
+}
+nav a {
+    padding: 15px 20px;
+    /* text-align: center; */
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+nav a:hover{
+    transition: 0.2s ease-out;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border-radius: 5%;
+
+}
+
+
+#logo img{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+
+}
+
+main{
+    display: block;
+}
+
+/* MAIN */
+main{
+
+    margin: auto;
+    background-color:#C9D2E0;
+}
+#container{
+    display: block;
+    background-image: url(../img/Big\ Hero\ 6\ \(2014\)\ Desktop\ Wallpaper\ _\ Moviemania.jpeg);
+    height: 60vh;
+}
+
+.container-subtekst{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0px 20vw 20px 20vw;
+    padding-top: 3vh;
+}
+
+
+.container-subtekst h1{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}  
+
+.container-subtekst p{
+    color: white;
+    font-size: 0.6rem;
+}  
+.container-button{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    gap: 25px;
+    margin: 15px 40px 15px 40px;
+}
+
+.container-button a{
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid yellow;
+    border-radius: 3%;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+.container-button a:hover{
+    background-color: rgba(255, 255, 0, 0.497);
+    transition: 0.8s ease-out;
+}
+
+#review{
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#C9D2E0;
+    gap: 100px;
+    flex-grow: 1;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+}
+
+#review img{
+    width: 45vw;
+    height: 45vh;
+
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    border: 3px solid white;
+    border-radius: 10px;
+
+}
+
+.product p{
+    width: 55vw;
+}
+
+.product a{
+    padding: 20px 40px;
+    color: black;
+    font-weight: bold;
+    border-radius: 3%;
+    text-decoration: none;
+    margin-top: 2vh;
+}
+
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    cursor:pointer;
+    font-size:30px;
+    
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.apple-button{
+    margin-top: 5vh;
+}
+.orange-button{
+    margin-top: 5vh;
+}
+.strawberry-button{
+    margin-top: 5vh;
+}
+
+.apple-button a{
+    border: 3px solid #64C85D;
+    margin-top: 2vh;
+}
+
+.orange-button a{
+    border: 3px solid #EEAA59;
+    margin-top: 2vh;
+}
+
+.strawberry-button a{
+    border: 3px solid #C62221;
+    margin-top: 2vh;
+}
+
+.apple-button a:hover{
+    border: 3px solid #64C85D;
+    background-color: #64c85d78;
+    transition: all 0.5s ease-out;
+}
+
+.orange-button a:hover{
+    border: 3px solid #eeaa59;
+    background-color: #eeab5985;
+    transition: 0.5s ease-out;
+}
+
+.strawberry-button a:hover{
+    border: 3px solid #C62221;
+    background-color: #c6212180;
+    transition: 0.5s ease-out;
+}
+
+
+
+
+#contactForm{
+    display: block;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2vh;
+
+
+}
+label{
+    font-weight: bold;
+    color: #2D3748;
+}
+
+.row1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.row2{
+
+}
+.row3{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+
+
+.textinput{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2vh;
+
+}
+
+input{
+    border: 2px solid #C9D2E0;
+    border-radius: 5px;
+    margin-bottom: 3px;
+
+}
+
+input[type="text"] {
+    width: 90vw;
+    font-size:1rem;
+    padding:10px;
+}
+input[type="email"] {
+
+    font-size:1rem;
+    padding:10px;
+}
+input[type="date"] {
+    width: 90vw;
+    font-size:1rem;
+    padding:10px;
+}
+
+.selectbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.selectbox label {
+    width:400px;
+}
+
+
+select{
+    border: 2px solid #C9D2E0;
+    width: 90vw;
+
+    font-size:1rem;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.subject{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+.subject textarea{
+    border: 2px solid #C9D2E0;
+    width: 90vw;
+    height: 100px;
+    margin-top: 10px;
+
+}
+.subject label{
+    width: 200px;
+}
+
+.radiobuttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.radiobutton{
+    display: flex;
+    flex-direction: row;
+}
+.radiobuttons h2{
+    width: 200px;
+    font-size: 1rem;
+}
+input[type="radio"] {
+    width:5%;
+    font-size: 5rem;
+    color: #C9D2E0;
+    background-color: #C9D2E0;
+
+}
+.radiobuttons label {
+    width:300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.akkoord{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.textinput button{
+
+    height: 5vh;
+    background-color: #2D3748;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+footer{
+    background-color:#355384;
+    margin: auto;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    height: 60vh;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-areas:
+        "logo  "
+        "copyright "
+        "socialmedia"
+        "copyright2";
+
+}
+.footer-logo{
+    grid-area: logo;
+}
+.footer-logo img{
+    width: 100px;
+    height: 100px;
+}
+.copyright1{
+    grid-area: copyright;
+
+}
+.copyright2{
+
+    grid-area: copyright2;
+    color: #000000;
+}
+
+
+.socialmedia-icon{
+    grid-area: socialmedia;
+}
+.socialmedia-icon img{
+    height: 6vh;
+    width: 12vw;
+}
+
+
+
+
+
+
+#chat-window{
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 3vw;
+    font-size: 1.2rem;
+    background-color: grey;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    height: 10vh;
+    box-shadow: -5px -5px 10px rgb(0 0 0 / 0.4);
+    transform: translate(1000px);
+    animation: show-chat 1s forwards 2s;
+}
+
+@keyframes show-chat{
+    0%{
+        transform: translateX(200px);
+        filter: blur(10px);
+    }
+    90%{
+        transform:(-40px);
+    }
+    100%{
+        transform: none;
+        filter: none;
+    }
+}
+
+@keyframes show-conversation{
+    from{
+        height: 0vh;
+    }
+    to{
+        height: 40vh;
+    }
+}
+
+#chat-content{
+    background-color: grey;
+    font-size: 0.5rem;
+    flex: 1;
+    padding: 10px;
+    animation: show-conversation;
+}
+
+#chat-question{
+    margin-bottom: 2vh;
+}
+
+input#chat-question{
+    width: 50vw;
+    font-size:1rem;
+    padding:5px;
+}
+
+
+
+
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+/* HEADER */
+header{
+
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    margin: auto;
+    background-color:#C9D2E0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+
+}
+nav a {
+    padding: 15px 20px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+nav a:hover{
+    transition: 0.2s ease-out;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+
+}
+
+
+#logo img{
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+
+}
+
+/* MAIN */
+main{
+    width: 90vw;
+    margin: auto;
+    background-color:#C9D2E0;
+}
+#container{
+
+    margin: auto;
+    background-image: url(../img/Big\ Hero\ 6\ \(2014\)\ Desktop\ Wallpaper\ _\ Moviemania.jpeg);
+    background-position-x: center;
+    background-position-y: center ;
+    width: 90vw; 
+    height: 60vh;
+}
+
+.container-subtekst{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0px 20vw 20px 20vw;
+    padding-top: 3vh;
+}
+
+
+.container-subtekst h1{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}  
+
+.container-subtekst p{
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+}  
+.container-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 40px 500px 20px 500px;
+}
+
+.container-button a{
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid yellow;
+    border-radius: 3%;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+.container-button a:hover{
+    background-color: rgba(255, 255, 0, 0.497);
+    transition: 0.8s ease-out;
+}
+
+#review{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#C9D2E0;
+    gap: 100px;
+    flex-grow: 1;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+}
+
+#review img{
+    width: 10vw;
+    height: 35vh;
+
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: -5px -5px 10px rgb(0 0 0 / 0.4);
+}
+
+.product p{
+    width: 20vw;
+}
+
+.product a{
+    padding: 20px 40px;
+    color: black;
+    font-weight: bold;
+    border-radius: 3%;
+    text-decoration: none;
+    margin-top: 2vh;
+}
+
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    cursor:pointer;
+    font-size:30px;
+    
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.apple-button{
+    margin-top: 5vh;
+}
+.orange-button{
+    margin-top: 5vh;
+}
+.strawberry-button{
+    margin-top: 5vh;
+}
+
+.apple-button a{
+    border: 3px solid #64C85D;
+    margin-top: 2vh;
+}
+
+.orange-button a{
+    border: 3px solid #EEAA59;
+    margin-top: 2vh;
+}
+
+.strawberry-button a{
+    border: 3px solid #C62221;
+    margin-top: 2vh;
+}
+
+.apple-button a:hover{
+    border: 3px solid #64C85D;
+    background-color: #64c85d78;
+    transition: all 0.5s ease-out;
+}
+
+.orange-button a:hover{
+    border: 3px solid #eeaa59;
+    background-color: #eeab5985;
+    transition: 0.5s ease-out;
+}
+
+.strawberry-button a:hover{
+    border: 3px solid #C62221;
+    background-color: #c6212180;
+    transition: 0.5s ease-out;
+}
+
+
+#contactForm{
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2vh;
+
+
+}
+label{
+    font-weight: bold;
+    color: #2D3748;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.row2{
+
+}
+.row3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+
+.textinput{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2vh;
+
+}
+
+input{
+    border: 2px solid #C9D2E0;
+    border-radius: 5px;
+    margin-bottom: 3px;
+
+}
+
+input[type="text"] {
+    width: 23vw;
+    font-size:1rem;
+    padding:10px;
+}
+input[type="email"] {
+
+    font-size:1rem;
+    padding:10px;
+}
+input[type="date"] {
+    width: 23vw;
+    font-size:1rem;
+    padding:10px;
+}
+
+.selectbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.selectbox label {
+    width:200px;
+}
+
+
+select{
+    border: 2px solid #C9D2E0;
+    width: 50vw;
+
+    font-size:1rem;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.subject{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+.subject textarea{
+    border: 2px solid #C9D2E0;
+    width: 50vw;
+    height: 100px;
+    margin-top: 10px;
+
+}
+.subject label{
+    width: 200px;
+}
+
+.radiobuttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.radiobutton{
+    display: flex;
+    flex-direction: row;
+}
+.radiobuttons h2{
+    width: 250px;
+    font-size: 1rem;
+}
+input[type="radio"] {
+    width:2%;
+    font-size: 5rem;
+    color: #C9D2E0;
+    background-color: #C9D2E0;
+
+}
+.radiobuttons label {
+    width:300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.akkoord{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.textinput button{
+
+    height: 5vh;
+    background-color: #2D3748;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer{
+    width: 90vw;
+    background-color:#04275f;
+    margin: auto;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    height: 30vh;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "logo logo1  "
+        "copyright copyright1"
+        "socialmedia socialmedia1"
+
+
+}
+.footer-logo{
+    grid-area: logo;
+}
+.footer-logo img{
+    width: 100px;
+    height: 100px;
+}
+.copyright1{
+    grid-area: copyright;
+
+}
+.copyright2{
+
+    grid-area: copyright1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+    color: white;
+}
+
+
+.socialmedia-icon{
+    grid-area: socialmedia;
+
+    padding: 10px;
+    gap: 100px;
+}
+.socialmedia-icon img{
+    height: 6vh;
+    width: 6vw;
+
+
+}
+
+
+#chat-window{
+    position: fixed;
+    bottom: 3vh;
+    right: 3vw;
+    font-size: 1.2rem;
+    background-color: grey;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    height: 15vh;
+    box-shadow: -5px -5px 10px rgb(0 0 0 / 0.4);
+    transform: translate(1000px);
+    animation: show-chat 1s forwards 2s;
+}
+
+@keyframes show-chat{
+    0%{
+        transform: translateX(200px);
+        filter: blur(10px);
+    }
+    90%{
+        transform:(-40px);
+    }
+    100%{
+        transform: none;
+        filter: none;
+    }
+}
+
+@keyframes show-conversation{
+    from{
+        height: 0vh;
+    }
+    to{
+        height: 40vh;
+    }
+}
+
+#chat-content{
+    background-color: grey;
+    font-size: 0.8rem;
+    flex: 1;
+    padding: 5px;
+    animation: show-conversation;
+}
+
+#chat-question{
+    /* margin-bottom: 2vh; */
+
+}
+
+input#chat-question{
+    width: 15vw;
+    font-size:1rem;
+    padding:5px;
+}
+
+
+}   
