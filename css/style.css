@@ -6,9 +6,6 @@
 body {
     margin: 0 auto;
     scroll-behavior: smooth;
-    /* display: flex;
-    justify-content: center; */
-
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
@@ -43,7 +40,6 @@ nav a:hover{
     background-color: white;
     color: black;
     border-radius: 5%;
-
 }
 
 
@@ -51,7 +47,6 @@ nav a:hover{
     width: 80px;
     height: 80px;
     flex-shrink: 0;
-
 }
 
 main{
@@ -106,7 +101,6 @@ main{
     text-decoration: none;
     flex-grow: 1;
     text-align: center;
-
 }
 
 .container-button a:hover{
@@ -125,13 +119,11 @@ main{
     padding-bottom: 5vh;
     padding-left: 2vw;
     padding-right: 2vw;
-
 }
 
 #review img{
     width: 45vw;
     height: 45vh;
-
 }
 
 .product{
@@ -145,7 +137,6 @@ main{
     padding-bottom: 5vh;
     border: 3px solid white;
     border-radius: 10px;
-
 }
 
 .product p{
@@ -161,43 +152,16 @@ main{
     margin-top: 2vh;
 }
 
+.star{
+    display: flex;
+    flex-direction: row;
+}
 
-.rate {
-    float: left;
-    height: 46px;
-    padding: 10px;
+.checked {
+    color: orange;
+    font-size: 2rem;
 }
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    cursor:pointer;
-    font-size:30px;
-    
-}
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate > input:checked ~ label {
-    color: #ffc700;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
-}
+
 
 .apple-button{
     margin-top: 5vh;
@@ -243,8 +207,6 @@ main{
 }
 
 
-
-
 #contactForm{
     display: block;
     width: 90vw;
@@ -270,23 +232,18 @@ label{
 }
 .row3{
     display: flex;
-    flex-direction: column;
-
-    
+    flex-direction: column;   
 }
-
-
 
 .textinput{
     display: flex;
     flex-direction: column;
     padding-bottom: 2vh;
-
 }
 
 input{
     border: 2px solid #C9D2E0;
-    border-radius: 5px;
+    border-radius: 5px;  
     margin-bottom: 3px;
 
 }
@@ -297,7 +254,7 @@ input[type="text"] {
     padding:10px;
 }
 input[type="email"] {
-
+    width: 90vw;
     font-size:1rem;
     padding:10px;
 }
@@ -320,7 +277,6 @@ input[type="date"] {
 select{
     border: 2px solid #C9D2E0;
     width: 90vw;
-
     font-size:1rem;
     padding:10px;
     border-radius: 5px;
@@ -375,7 +331,6 @@ input[type="radio"] {
     margin-bottom: 2vh;
 }
 .textinput button{
-
     height: 5vh;
     background-color: #2D3748;
     color: white;
@@ -415,14 +370,12 @@ footer{
 }
 .copyright1{
     grid-area: copyright;
-
 }
 .copyright2{
 
     grid-area: copyright2;
     color: #000000;
 }
-
 
 .socialmedia-icon{
     grid-area: socialmedia;
@@ -431,9 +384,6 @@ footer{
     height: 6vh;
     width: 12vw;
 }
-
-
-
 
 
 
@@ -654,42 +604,14 @@ main{
     margin-top: 2vh;
 }
 
+.star{
+    display: flex;
+    flex-direction: row;
+}
 
-.rate {
-    float: left;
-    height: 46px;
-    padding: 10px;
-}
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    cursor:pointer;
-    font-size:30px;
-    
-}
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate > input:checked ~ label {
-    color: #ffc700;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
+.checked {
+    color: orange;
+    font-size: 2rem;
 }
 
 .apple-button{
@@ -810,7 +732,6 @@ input[type="date"] {
 select{
     border: 2px solid #C9D2E0;
     width: 50vw;
-
     font-size:1rem;
     padding:10px;
     border-radius: 5px;
@@ -826,7 +747,6 @@ select{
     width: 50vw;
     height: 100px;
     margin-top: 10px;
-
 }
 .subject label{
     width: 200px;
@@ -850,7 +770,6 @@ input[type="radio"] {
     font-size: 5rem;
     color: #C9D2E0;
     background-color: #C9D2E0;
-
 }
 .radiobuttons label {
     width:300px;
@@ -865,7 +784,6 @@ input[type="radio"] {
     margin-bottom: 2vh;
 }
 .textinput button{
-
     height: 5vh;
     background-color: #2D3748;
     color: white;
@@ -894,21 +812,19 @@ footer{
         "copyright copyright1"
         "socialmedia socialmedia1"
 
-
 }
 .footer-logo{
     grid-area: logo;
 }
 .footer-logo img{
-    width: 100px;
-    height: 100px;
+    width: 5vw;
+    height: 8vh;
 }
 .copyright1{
     grid-area: copyright;
 
 }
 .copyright2{
-
     grid-area: copyright1;
     display: flex;
     flex-direction: row;
@@ -917,7 +833,10 @@ footer{
     color: white;
 }
 
-
+.copyright2 a{
+    text-decoration: none;
+    color: white;
+}
 .socialmedia-icon{
     grid-area: socialmedia;
 
@@ -925,8 +844,8 @@ footer{
     gap: 100px;
 }
 .socialmedia-icon img{
-    height: 6vh;
-    width: 6vw;
+    width: 5vw;
+    height: 8vh;
 
 
 }
@@ -981,7 +900,7 @@ footer{
 }
 
 #chat-question{
-    /* margin-bottom: 2vh; */
+    margin-bottom: 2vh; 
 
 }
 

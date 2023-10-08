@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="NL">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Frontend eind opdracht">
-    <meta name="keywords" content="HTML, sCSS">
+    <meta name="keywords" content="HTML, CSS, energydrink">
     <meta name="author" content="Chris Tang">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title> Front-end opdracht </title>
 </head>
@@ -25,6 +26,7 @@
             <a href="#">Contact</a>
         </nav>
     </header>
+
     <main> 
         <section id="container">
             <article class="container-subtekst">
@@ -49,7 +51,7 @@
                 <img src="./img/Apple.png" alt="Apple energy boom image">
                 <h2>Energy Boom Apple</h2>
 
-                <div class="rate">
+                <!-- <div class="rate">
                     <input type="radio" id="star5" name="rate" value="5" />
                     <label for="star5" title="text">5 stars</label>
                     <input type="radio" id="star4" name="rate" value="4" />
@@ -60,7 +62,14 @@
                     <label for="star2" title="text">2 stars</label>
                     <input type="radio" id="star1" name="rate" value="1" />
                     <label for="star1" title="text">1 star</label>
-                </div>
+                </div> -->
+                <article class="star">
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star "></div>
+                    <div class="fa fa-star "></div>
+                </article>
                 <p>Verslind één van de gemeenste energie dranken op deze planeet, de Monster OG. Monster Energy OG is een 
                     soepele, verfrissende mix van zoete en zoute exotische citrus smaken met een vleugje pure adrenaline, 
                     met een extra kick van 160MG caffeine. Unleash The Beast met Monster OG! In Nederland is statiegeld 
@@ -69,23 +78,18 @@
                     <div class="apple-button">
                         <a href="" >Naar website</a>
                     </div>
-
             </article>
+
             <article class="product">
                 <img src="./img/Orange.png" alt="Orange energy boom image">
                 <h2>Energy Boom Orange</h2>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                </div>
+                <article class="star">
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                </article>
                 <p>Verslind één van de gemeenste energie dranken op deze planeet, de Monster OG. Monster Energy OG is een 
                     soepele, verfrissende mix van zoete en zoute exotische citrus smaken met een vleugje pure adrenaline, 
                     met een extra kick van 160MG caffeine. Unleash The Beast met Monster OG! In Nederland is statiegeld 
@@ -101,18 +105,15 @@
 
                 <img src="./img/./Strawberry.png" alt="Strawberry energy boom image">
                 <h2>Energy Boom Strawberry</h2>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                </div>
+
+                <article class="star">
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star "></div>
+                </article>
+
                 <p>Verslind één van de gemeenste energie dranken op deze planeet, de Monster OG. Monster Energy OG is een 
                     soepele, verfrissende mix van zoete en zoute exotische citrus smaken met een vleugje pure adrenaline, 
                     met een extra kick van 160MG caffeine. Unleash The Beast met Monster OG! In Nederland is statiegeld 
@@ -144,10 +145,11 @@
                         <input required type="email" id="email" placeholder="Voer email adres in" name="email">
                     </div>
                 </div>
+                
                 <div class="row3">
                     <div class="textinput">
-                        <label for="woonplaats">Woonplaats</label>
-                        <input required type="text" id="woonplaats" placeholder="Voor uw woonplaats" name="woonplaats">
+                        <label for="place">Woonplaats</label>
+                        <input required type="text" id="woonplaceplaats" placeholder="Voor uw woonplaats" name="place">
                     </div>
                     <div class="textinput">
                         <label for="date">Geboortedatum</label>
@@ -168,7 +170,7 @@
 
                 <div class="subject">
                     <label for="text">Jouw vraag</label>
-                    <textarea id="ask" name="subject" placeholder="" ></textarea>
+                    <textarea id="ask" name="subject" ></textarea>
                 </div>
 
                 <div class="radiobuttons">
@@ -203,10 +205,10 @@
                 <p>Copyright 2023 Energy Boom </p>
             </div>
             <div class="copyright2">
-                <p>Privacyverklaring</p>
-                <p>Algemene voorwaarden</p>
-                <p>Cookie beleid</p>
-                <p>Contact</p>
+                <a href="">Privacyverklaring</a>
+                <a href="">Algemene voorwaarden</a>
+                <a href="">Cookie beleid</a>
+                <a href="">Contact</a>
             </div>
             <div class="socialmedia-icon">
                 <img src="./img/instagram.png" alt="instagram logo">
